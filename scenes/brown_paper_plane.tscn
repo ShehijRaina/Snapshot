@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://puj5co48ala2"]
+
+[ext_resource type="Script" path="res://scenes/snowball.gd" id="1_6nsv1"]
+[ext_resource type="Texture2D" uid="uid://deqwj7x1n0v1r" path="res://assets/img/obstacles/brown_paper_plane.png" id="2_abug2"]
+
+[node name="BrownPaperPlane" type="Area2D"]
+script = ExtResource("1_6nsv1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.02, 1.68)
+texture = ExtResource("2_abug2")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-96, 14, 26, -56, 40, -32, 94, 7, 63, 10, 66, 32)

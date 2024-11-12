@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://ci7dmopr1su72"]
+
+[ext_resource type="Texture2D" uid="uid://cy8sk7icth105" path="res://assets/img/obstacles/fence.png" id="1_sjgk7"]
+
+[node name="Fence" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-39, -62)
+scale = Vector2(2.64, 2.56)
+texture = ExtResource("1_sjgk7")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-53.72, -73)
+scale = Vector2(8.10778, 10)
+polygon = PackedVector2Array(18.8, 13.9, -17.5, 13.8, -16.3, -10.2, 2.3, -9.1, 17.2, -9.3)

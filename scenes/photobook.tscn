@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3 uid="uid://ddtr84x8n354h"]
+
+[ext_resource type="Texture2D" uid="uid://b6nunhc3wlgek" path="res://assets/img/photobook/old_paper.jpeg" id="1_6y87o"]
+[ext_resource type="Texture2D" uid="uid://bfbtad7pslf70" path="res://assets/img/photobook/sixties.png" id="3_tty2m"]
+[ext_resource type="Texture2D" uid="uid://dgfkfav1ro4q3" path="res://assets/img/photobook/nineties.png" id="4_wnwdw"]
+[ext_resource type="FontFile" uid="uid://d3tmrgcajojg2" path="res://assets/fonts/ChopinScript.ttf" id="5_t5war"]
+[ext_resource type="Texture2D" uid="uid://c6lode4dka1mn" path="res://assets/img/photobook/thirties.png" id="5_v8c17"]
+
+[node name="Photobook" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-606, -225)
+scale = Vector2(0.817667, 0.519095)
+texture = ExtResource("1_6y87o")
+centered = false
+
+[node name="Label" type="Label" parent="Sprite2D"]
+anchors_preset = -1
+anchor_left = 0.16
+anchor_right = 0.8
+anchor_bottom = 0.335
+offset_left = 0.737671
+offset_top = 32.6308
+offset_right = -0.262207
+offset_bottom = 0.0957642
+theme_override_fonts/font = ExtResource("5_t5war")
+theme_override_font_sizes/font_size = 500
+text = "Photobook"
+
+[node name="TextureButton2" type="TextureButton" parent="Sprite2D"]
+anchors_preset = -1
+anchor_left = 0.57
+anchor_top = 0.28
+anchor_right = 0.9
+anchor_bottom = 0.593
+offset_left = 203.982
+offset_top = -66.0384
+offset_right = 213.982
+offset_bottom = -31.9116
+rotation = 0.31765
+texture_normal = ExtResource("3_tty2m")
+
+[node name="TextureButton3" type="TextureButton" parent="Sprite2D"]
+anchors_preset = -1
+anchor_left = 0.32
+anchor_top = 0.66
+anchor_right = 0.644
+anchor_bottom = 1.004
+offset_left = -122.251
+offset_top = -16.6837
+offset_right = -94.2509
+offset_bottom = -27.3079
+rotation = -0.127409
+texture_normal = ExtResource("4_wnwdw")
+
+[node name="TextureButton" type="TextureButton" parent="Sprite2D"]
+anchors_preset = -1
+anchor_left = 0.054
+anchor_top = 0.283
+anchor_right = 0.414
+anchor_bottom = 0.614
+offset_left = -82.5055
+offset_top = 93.2716
+offset_right = 1225.49
+offset_bottom = 1059.22
+rotation = -0.127409
+scale = Vector2(0.45, 0.45)
+texture_normal = ExtResource("5_v8c17")

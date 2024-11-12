@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://btdxpemlmwebw"]
+
+[ext_resource type="Texture2D" uid="uid://di41ocqdvy6qn" path="res://assets/img/obstacles/snow_stone1.png" id="1_pi6k7"]
+
+[node name="SnowStone1" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-16, -40)
+scale = Vector2(4, 4)
+texture = ExtResource("1_pi6k7")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(10, 10)
+polygon = PackedVector2Array(20, 14, -20, 14, -10.5, -5.75, -6.8, -9.6, 5.4, -10)

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bllqvdiy5kcu3"]
+
+[ext_resource type="Script" path="res://scenes/snowball.gd" id="1_gu6oi"]
+[ext_resource type="Texture2D" uid="uid://ctl3vwi7iltct" path="res://assets/img/obstacles/balloon.png" id="2_vmy5v"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s8m3f"]
+radius = 30.5
+height = 71.0
+
+[node name="Balloon" type="Area2D"]
+script = ExtResource("1_gu6oi")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+scale = Vector2(2, 2)
+shape = SubResource("CapsuleShape2D_s8m3f")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3, 1)
+scale = Vector2(1.46, 1.615)
+texture = ExtResource("2_vmy5v")

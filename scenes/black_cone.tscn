@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c65cw8m63e11s"]
+
+[ext_resource type="Texture2D" uid="uid://s31dphxe2li" path="res://assets/img/obstacles/cone.png" id="1_lb002"]
+
+[node name="RedCone" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1, -24)
+scale = Vector2(3, 3)
+texture = ExtResource("1_lb002")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-136, 89, -83, 64, -2, -163, 99, 70, 142, 87, 94, 121, -99, 123, -136, 94)
