@@ -1,0 +1,9 @@
+Label
+CollisionPolygon2D
+Sprite2D
+TextureButton
+AudioStreamPlayer2D
+Button
+TextEdit
+Node2D
+Node

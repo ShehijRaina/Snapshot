@@ -59,6 +59,7 @@ func _ready():
 	$GameOver.hide()
 	
 func back_to_photobook():
+	level_opened = false
 	$HUD.hide()
 	$Dino.hide()
 	$GameOver.hide()
@@ -124,6 +125,14 @@ func new_game():
 	
 	#reset hud and game over screen
 	$HUD.get_node("StartLabel").show()
+	if current_level == 1:
+		$HUD.get_node("Goal").text = "SNAP A PHOTO WITH BILLY AND HIS SNOWMAN!" 
+	elif current_level == 2:
+		$HUD.get_node("Goal").text = "LATE FOR A DATE! SNAP A PHOTO WITH ELIZABETH AT THE DRIVE-IN CINEMA" 
+	else:
+		$HUD.get_node("Goal").text = "YOU'RE A GRANDPA! SNAP A PHOTO WITH THE BUNDLE OF JOY" 
+		
+	$HUD.get_node("Goal").show()
 	$GameOver.hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -159,6 +168,7 @@ func _process(delta):
 			if Input.is_action_pressed("ui_accept") or Input.is_action_pressed("left_click"):
 				game_running = true
 				$HUD.get_node("StartLabel").hide()
+				$HUD.get_node("Goal").hide()
 
 func generate_obs():
 	#generate ground obstacles
