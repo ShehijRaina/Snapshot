@@ -1,4 +1,4 @@
-# Snapshot
+# Snapshot📸
 
 Our team's submission for the Bath Computer Science Society's [Game Jam 2024](https://jam24.devpost.com).
 
